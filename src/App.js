@@ -38,7 +38,7 @@ function App() {
   };
 
   const onDeleteNote = (idToDelete) => {
-    if(window.confirm('Are you sure you want to delete this note?') == true){
+    if(window.confirm('Are you sure you want to delete this note?') === true){
       setNotes(notes.filter((note) => note.id !== idToDelete));
     };
     
